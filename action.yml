@@ -1,0 +1,6 @@
+# action.yml
+name: 'Jekyll serve'
+description: 'Build a Jekyll website and start a local webserver'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

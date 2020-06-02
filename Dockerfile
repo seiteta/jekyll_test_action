@@ -1,5 +1,5 @@
-FROM python:latest
+FROM jekyll/jekyll:3.8
 
-ADD helloworld.py /
+COPY entrypoint.sh /entrypoint.sh
 
-CMD [ "python", "./helloworld.py" ]
+ENTRYPOINT ["/entrypoint.sh"]
